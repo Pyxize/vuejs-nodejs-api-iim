@@ -23,6 +23,11 @@ const routes = [
         name: "add",
         component: () => import("../src/components/addBook.vue")
     },
+    {
+        path: "/three",
+        name: "threejs",
+        component: () => import("../src/components/threejs/Planet.vue")
+    }
 ]
 
 const router = createRouter({
