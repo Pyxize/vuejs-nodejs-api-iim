@@ -5,3 +5,10 @@ dist-ssr
 *.local
 .idea
 .vscode
+package-lock.json
+Thumbs.db
+db.json
+*.log
+public/
+.deploy*/
+src/_drafts
