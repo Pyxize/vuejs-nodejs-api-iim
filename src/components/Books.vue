@@ -38,7 +38,6 @@ import BookDataService from "../services/BookDataService";
 import Navbar from '../components/layouts/Navbar.vue'
 
 export default {
-
   name: "Books",
   components: {
     Navbar  
@@ -48,7 +47,7 @@ export default {
       books: [],
       currentBook: null,
       currentIndex: -1,
-      title: ""
+      title: "",
     };
   },
   methods: {

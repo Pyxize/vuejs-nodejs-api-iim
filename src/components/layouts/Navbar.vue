@@ -21,7 +21,7 @@
       this.$router.push('/');
       return ;
     }
-    this.$store.dispatch('getUserInfos');
+   // this.$store.dispatch('getUserInfos');
   },
   computed: {
     ...mapState({

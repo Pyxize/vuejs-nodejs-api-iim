@@ -1,10 +1,11 @@
 import http from "../http-common";
+import store from '../store/index'
+
 
 class BookDataService {
     getAll() {
-        return http.get("/book");
+        return http.get("/book",);
     }
-
     get(id) {
         return http.get(`/book/${id}`);
     }

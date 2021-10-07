@@ -1,4 +1,7 @@
 <template>
+  <div class="mt-8 ml-20">
+    <router-link to="/book" class="bg-blue-500 text-white hover:bg-blue-dark font-bold py-2 px-4 rounded">Retour</router-link>
+  </div>
   <div v-if="currentBook" class="flex justify-center items-center w-full mt-6">
     <form class="w-10/12">
       <div class="flex flex-col mb-4">
@@ -45,7 +48,7 @@
 
   <div v-else>
     <br />
-    <p>Shiiiiiiiiiiit</p>
+    <p>Une erreur est survenue</p>
   </div>
 </template>
 
@@ -56,7 +59,8 @@ export default {
   data() {
     return {
       currentBook: null,
-      message: ''
+      message: '',
+     // headers: { Authorization : `Bearer ${this.$store.state.user.token}`}
     };
   },
   methods: {
@@ -72,7 +76,7 @@ export default {
     },
 
     updateBook() {
-      BookDataService.update(this.currentBook._id, this.currentBook)
+      BookDataService.update(this.currentBook._id, this.currentBook,)
           .then(response => {
             console.log(response.data);
             this.message = 'Le manga à bien été modifié !!';

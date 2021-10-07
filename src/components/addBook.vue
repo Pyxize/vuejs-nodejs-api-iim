@@ -1,4 +1,5 @@
 <template>
+  <router-link to="/" class="bg-blue-500  text-white hover:bg-blue-dark font-bold py-2 px-4 rounded">Retour</router-link>
   <div v-if="!submitted" class="flex flex-col justify-center items-center w-full mt-6">
     <form class="w-10/12">
       <div class="flex flex-col mb-4">
@@ -49,11 +50,14 @@
     </button>
   </div>
 
-  <div v-else>
-    <h4>Votre manga est ajouté !!!</h4>
+  <div class="flex flex-col items-center mt-8" v-else>
+    <h4 class="mb-6">Votre manga est ajouté !!!</h4>
+    <!--
     <button class="bg-green-600 text-white hover:bg-blue-dark font-bold py-2 px-4 rounded" @click="newBook">Retour à la
       liste des mangas
     </button>
+    -->
+    <router-link to="/book" class="bg-green-600 text-white hover:bg-blue-dark font-bold py-2 px-4 rounded" @click="newBook">Retour à la liste des mangas</router-link>
   </div>
 </template>
 
