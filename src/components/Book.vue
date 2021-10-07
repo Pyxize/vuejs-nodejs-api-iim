@@ -1,5 +1,5 @@
 <template>
-  <div v-if="currentBook" class="flex justify-center items-center w-full mt-6 bg-gray-200">
+  <div v-if="currentBook" class="flex justify-center items-center w-full mt-6">
     <form class="w-10/12">
       <div class="flex flex-col mb-4">
         <label for="title" class="mb-2 font-bold text-lg text-gray-900">Titre</label>

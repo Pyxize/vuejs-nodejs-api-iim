@@ -3,10 +3,15 @@ import {createWebHistory, createRouter} from "vue-router";
 
 const routes = [
     {
-        path: "/",
+        path: '/',
+        name: 'login',
+        component: () => import("../src/components/form/login.vue"),
+    },
+    {
+        path: "/book",
         alias: "/Book",
         name: "book",
-        component: () => import("../src/components/Books.vue")
+        component: () => import("../src/components/Books.vue"),
     },
     {
         path: "/book/:id",
@@ -17,7 +22,7 @@ const routes = [
         path: "/add",
         name: "add",
         component: () => import("../src/components/addBook.vue")
-    }
+    },
 ]
 
 const router = createRouter({

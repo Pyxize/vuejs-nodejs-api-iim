@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-center items-center w-full mt-6">
-    <div v-if="!submitted">
+  <div v-if="!submitted" class="flex flex-col justify-center items-center w-full mt-6">
+    <form class="w-10/12">
       <div class="flex flex-col mb-4">
         <label class="mb-2 font-bold text-lg text-gray-900" for="titre">Titre</label>
         <input
@@ -44,14 +44,16 @@
             name="publishedDate"
         />
       </div>
+    </form>
+    <button @click="saveBook" class="bg-blue-600 text-white hover:bg-blue-dark font-bold py-2 px-4 rounded">Ajouter
+    </button>
+  </div>
 
-      <button @click="saveBook" class="bg-blue-600 text-white hover:bg-blue-dark font-bold py-2 px-4 rounded">Ajouter</button>
-    </div>
-
-    <div v-else>
-      <h4>Votre manga est ajouté !!!</h4>
-      <button class="bg-green-600 text-white hover:bg-blue-dark font-bold py-2 px-4 rounded" @click="newBook">Retour à la liste des mangas</button>
-    </div>
+  <div v-else>
+    <h4>Votre manga est ajouté !!!</h4>
+    <button class="bg-green-600 text-white hover:bg-blue-dark font-bold py-2 px-4 rounded" @click="newBook">Retour à la
+      liste des mangas
+    </button>
   </div>
 </template>
 

@@ -1,4 +1,5 @@
 <template>
+    <Navbar/>
   <div class="flex justify-center items-center pt-8">
     <h1 class="text-lg font-bold text-grey-700">Liste des mangas </h1>
   </div>
@@ -34,10 +35,14 @@
 </template>
 <script>
 import BookDataService from "../services/BookDataService";
+import Navbar from '../components/layouts/Navbar.vue'
 
 export default {
 
   name: "Books",
+  components: {
+    Navbar  
+  },
   data() {
     return {
       books: [],
