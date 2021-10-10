@@ -1,7 +1,48 @@
-# Vue 3 + Vite
+# Vue 3 + ViteJs
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Lib Vitejs : https://vitejs.dev/
 
-## Recommended IDE Setup
+### Projet qui utilise Vuejs 3 + NodeJs
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+Quand vous êtes connecter l'utilisateur peut ajouter un Manga (le supprimer, le modifier et le voir)
+
+Dans la Navbar Vous pouvez : 
+* Ajouter un Manga
+* Voir en 3D la planete Mars (ThreeJs)
+* Rentrer dans un Space pour discuter avec une personne (il faut ouvrir deux pages et rentrer deux noms d'utilisateurs différents)
+
+
+#Mise en place du projet :
+
+il faut cloner deux projets, le projet vuejs pour le Front et le projet nodejs pour le Back :
+
+##Le projet Front: 
+
+###Cloner le projet vuejs :
+
+`git clone https://github.com/Pyxize/vuejs-nodejs-api-iim`
+
+### installer les packages
+
+`npm install`
+
+### Lancer le serveur
+
+`npm run dev
+`
+
+
+##Le projet Back : 
+
+**le projet est sur un autre Répo github** 
+
+### cloner le projet Nodejs
+git clone 
+
+### installer les packages
+`npm install`
+
+### Lancer le serveur
+
+`nodemon server.js
+`
