@@ -1,7 +1,7 @@
 <template>
     <Navbar/>
   <div class="flex justify-center items-center pt-8">
-    <h1 class="text-lg font-bold text-grey-700">Liste des mangas </h1>
+    <h1 class="text-blue-500 font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900 pb-2">Liste des mangas </h1>
   </div>
 
     <!-- get ALL manga -->
@@ -48,6 +48,7 @@ export default {
       currentBook: null,
       currentIndex: -1,
       title: "",
+     // socket: io('http://localhost:5000')
     };
   },
   methods: {

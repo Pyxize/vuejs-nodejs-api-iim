@@ -24,6 +24,11 @@ const routes = [
         component: () => import("../src/components/addBook.vue")
     },
     {
+        path: "/discussion",
+        name: "discussion",
+        component: () => import("../src/components/ChatApp.vue")
+    },
+    {
         path: "/three",
         name: "threejs",
         component: () => import("../src/components/threejs/Planet.vue")
