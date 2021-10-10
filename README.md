@@ -37,7 +37,7 @@ il faut cloner deux projets, le projet vuejs pour le Front et le projet nodejs p
 **le projet est sur un autre Répo github** 
 
 ### cloner le projet Nodejs
-git clone 
+git clone https://github.com/Pyxize/node-api-iim
 
 ### installer les packages
 `npm install`

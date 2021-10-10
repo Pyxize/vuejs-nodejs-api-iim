@@ -48,7 +48,7 @@
 
   <div v-else>
     <br />
-    <p>Une erreur est survenue</p>
+    <p>OK</p>
   </div>
 </template>
 
